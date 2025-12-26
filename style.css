@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #020817;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 90px 20px;
+  background: radial-gradient(circle, #061b3a, #020817);
+  overflow: hidden;
+}
+
+.logo {
+  width: 160px;
+  margin-bottom: 25px;
+  filter: drop-shadow(0 0 30px #00eaff);
+  animation: pulse 2.5s infinite;
+}
+
+@keyframes pulse {
+  0% { filter: drop-shadow(0 0 15px #00eaff); }
+  50% { filter: drop-shadow(0 0 40px #00eaff); }
+  100% { filter: drop-shadow(0 0 15px #00eaff); }
+}
+
+.hero h1 {
+  font-size: 52px;
+  color: #00eaff;
+  text-shadow: 0 0 25px #00eaff;
+}
+
+.hero p {
+  margin: 15px 0;
+  color: #9adfff;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 34px;
+  background: #00eaff;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 40px;
+  box-shadow: 0 0 25px #00eaff;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: white;
+  box-shadow: 0 0 45px #00eaff;
+}
+
+/* LIGHTNING EFFECT */
+.lightning {
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      120deg,
+      transparent,
+      transparent 40px,
+      rgba(0,234,255,0.08) 42px,
+      transparent 45px
+    );
+  animation: move 6s linear infinite;
+}
+
+@keyframes move {
+  from { background-position: 0 0; }
+  to { background-position: 800px 0; }
+}
+
+/* VIDEO */
+.video-section {
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.video-section h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #00eaff;
+  text-shadow: 0 0 20px #00eaff;
+}
+
+video {
+  width: 90%;
+  max-width: 900px;
+  border-radius: 18px;
+  border: 3px solid #00eaff;
+  box-shadow: 0 0 35px #00eaff;
+}
+
+/* ABOUT */
+.about {
+  padding: 60px 20px;
+  text-align: center;
+  background: #030b1e;
+}
+
+.about h2 {
+  color: #00eaff;
+  margin-bottom: 15px;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  color: #bcdfff;
+  font-size: 17px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #01040d;
+  color: #777;
+  font-size: 14px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .logo {
+    width: 130px;
+  }
+}
